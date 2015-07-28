@@ -77,6 +77,7 @@ class Wordpress extends Server
 
         $user = new User();
 
+        $user->name = $data['body']['name'];
         $user->nickname = $data['body']['name'];
         $user->uid = $data['body']['id'];
 
